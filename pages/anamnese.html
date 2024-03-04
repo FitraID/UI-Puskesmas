@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnese</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <!-- Header Section -->
+                    <div class="container-fluid p-0">
+                        <div class="row px-3">
+                            <div class="col">
+                                <div class="fs-2">
+                                    PUKESMAS KEMUNGINGSARI KIDUL
+                                </div>
+                                <div class="fs-5">
+                                    Jl.Jambu No 42, Jenggawah, Jember,Jawa Timur
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="container h-100 d-flex justify-content-end align-items-center">
+                                    <div class="row justify-content-end h-100 align-items-center" style="width: 300px;">
+                                        <div class="col d-flex justify-content-end fs-5">
+                                            Rizky ARISANDHI
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <i class="fa-solid fa-circle-user" style="font-size: 40px;"></i>
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <i class="fa-solid fa-power-off" style="font-size: 25px;"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid bg-black mt-1" style="height: 2px;">
+                            -
+                        </div>
+                    </div>
+                    <!-- Form Section -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3 d-flex align-items-center">
+                                        Tinggi Badan
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <div class="row w-100">
+                                            <div class="col d-flex align-items-center">
+                                                <input type="text" name="tingi" id="" style="width: 40px; height: 40px;">
+                                                Cm
+                                            </div>
+                                            <div class="col d-flex align-items-center">
+                                                Massa Tubuh
+                                                <input type="text" name="massa" id="" class="mx-2" style="width: 40px; height: 40px;">
+                                                Kg
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">Status Gigi</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="gigi" id="" placeholder="masukan status Gigi" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">Sistole</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="Sistole" id="" placeholder="masukan Sistole" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">Diastole</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="Diastole" id="" placeholder="masukan Diastole" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">Denyut Nadi</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="Denyut" id="" placeholder="masukan Denyut Nadi" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">Respirate Rate</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="Respirate" id="" placeholder="masukan Respirate Rate" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">Ket</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="Ket" id="" placeholder="masukan Keterangan" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">THX</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="THX" id="" placeholder="masukan THX" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">ABD</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="ABD" id="" placeholder="masukan ABD" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">EXT</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="EXT" id="" placeholder="masukan EXT" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3  d-flex align-items-center">HE</div>
+                                    <div class="col  d-flex align-items-center">
+                                        <input type="text" name="HE" id="" placeholder="masukan HE" style="width: 100%; height: 40px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg mt-3 mt-lg-0">
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3 d-flex align-items-center">
+                                        Alergi Obat
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input shadow border border-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                      Ya
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input shadow border border-3" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                      Tidak
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3 d-flex align-items-center">
+                                        Cari Obat
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <input type="tel" name="search" id="" class="form-control border border-5 " placeholder="Search">
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3"></div>
+                                    <div class="col d-flex align-items-center">
+                                        <button class="btn btn-primary">
+                                            Tambah
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="table-responsive-md">
+                                            <table id="obat" class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center bg-light">No</th>
+                                                        <th class="text-center bg-light">Kode Obat</th>
+                                                        <th class="text-center bg-light">Nama Obat</th>
+                                                        <th class="text-center bg-light">Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">0213</td>
+                                                        <td class="text-center">Paracetamol</td>
+                                                        <td class="text-center">Aksi</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Anamnese <br>
+                                        <textarea name="" id="" cols="20" rows="5" style="width: 100%;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="container d-flex justify-content-end gap-1 p-0" style="height: 50px;">
+                                    <button class="btn btn-primary shadow">
+                                        Simpan
+                                    </button>
+                                    <button class="btn btn-secondary shadow px-4">
+                                        Edit
+                                    </button>
+                                    <button class="btn btn-danger shadow">
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap5.js"></script>
+    <script>
+        $('#obat').DataTable();
+    </script>
+</body>
+</html>
