@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <!-- Header Section -->
+                    <div class="container-fluid p-0">
+                        <div class="row px-3">
+                            <div class="col">
+                                <div class="fs-2">
+                                    PUKESMAS KEMUNGINGSARI KIDUL
+                                </div>
+                                <div class="fs-5">
+                                    Jl.Jambu No 42, Jenggawah, Jember,Jawa Timur
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="container h-100 d-flex justify-content-end align-items-center">
+                                    <div class="row justify-content-end h-100 align-items-center" style="width: 300px;">
+                                        <div class="col d-flex justify-content-end fs-5">
+                                            Rizky ARISANDHI
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <i class="fa-solid fa-circle-user" style="font-size: 40px;"></i>
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-start">
+                                            <i class="fa-solid fa-power-off" style="font-size: 25px;"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid bg-black mt-1" style="height: 2px;">
+                            -
+                        </div>
+                    </div>
+                    <!-- INfo Section -->
+                    <div class="container-fluid p-5 pt-5">
+                        <div class="row">
+                            <div class="col p-0">
+                                <div class="row">
+                                    <div class="col px-3">
+                                        Diagnosa <br>
+                                        <textarea name="" id="" cols="50" rows="5" style="width: 100%; margin-top: 10px;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="container px-3 d-flex justify-content-end mt-2">
+                                        <button class="btn btn-primary px-5 shadow">Tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3 d-flex align-items-center">
+                                        Jenis Kasus
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <select id="Kasus" name="Kasus" style="width: 100%; height: 40px;">
+                                            <option value="kritis">kritis</option>
+                                            <option value="parah">parah</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col-3 d-flex align-items-center">
+                                        Jenis Diagnosa
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <select id="Diagnosa" name="Diagnosa" style="width: 100%; height: 40px;">
+                                            <option value="Batuk">Batuk</option>
+                                            <option value="Pilek">Pilek</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col d-flex align-items-center">
+                                        Kode ICD
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 50px;">
+                                    <div class="col d-flex align-items-center pe-0">
+                                        <input type="text" name="ICD" id="" style="width: 100%;" placeholder="masukan Kode ICD">
+                                    </div>
+                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                        <button class="btn btn-success" style="height: 40px;">
+                                            Lihat ICD 10
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="container-fluid">
+                                    <div class="table-responsive">
+                                        <table id="diagnosa" class="table table-bordered border-dark-subtle">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center bg-light">No</th>
+                                                    <th class="text-center bg-light">Kode ICD</th>
+                                                    <th class="text-center bg-light">Diagnosa</th>
+                                                    <th class="text-center bg-light">Jenis Kasus</th>
+                                                    <th class="text-center bg-light">Jenis Diagnosa</th>
+                                                    <th class="text-center bg-light">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="align-middle">
+                                                    <td class="text-center">1</td>
+                                                    <td class="text-center">1236</td>
+                                                    <td class="text-center">Batuk</td>
+                                                    <td class="text-center">Kritis</td>
+                                                    <td class="text-center">Sedang</td>
+                                                    <td class="text-center">
+                                                        <div class="row p-0 gap-0 d-flex justify-content-center">
+                                                            <div class="col-4 m-0 p-0">
+                                                                <button class="btn btn-primary m-0"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                    <i class="fa-solid fa-pen-to-square" style="font-size: 20px;"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-4 m-0 p-0">
+                                                                <button class="btn btn-danger m-0" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap5.js"></script>
+    <script>
+        $('#diagnosa').DataTable();
+    </script>
+</body>
+</html>
