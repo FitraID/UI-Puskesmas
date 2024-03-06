@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -45,79 +46,74 @@
                         </div>
                     </div>
                     <!-- Info Section -->
-                    <div class="container-fluid p-5">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col">
                                 <div class="row">
                                     <div class="col">
-                                        Tindakan <br>
-                                        <div class="row mt-1">
-                                            <div class="col d-flex align-items-center">
-                                                <input type="text" style="width: 100%;">
-                                            </div>
-                                            <div class="col-lg-2 d-flex align-items-center">
-                                                <button class="btn btn-primary px-4 mt-2 mt-lg-0">
-                                                    Cari
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2" style="height: 50px;">
-                                    <div class="col">
-                                        <div class="row">
-                                            <div class="col-3 d-flex align-items-center">
-                                                Dosis
-                                            </div>
-                                            <div class="col d-flex align-items-center">
-                                                <input type="text" name="" id="" style="height: 40px; width: 100%;">
+                                        <div class="mb-3">
+                                            <label for="a">Tindakan</label>
+                                            <div class="input-group mb-3" id="a">
+                                                <input type="text" class="form-control" id="icd" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                                                        <i class="bi bi-search"></i>
+                                                        Cari
+                                                    </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row" style="height: 50px;">
+                                <div class="row">
                                     <div class="col">
-                                        <div class="row">
-                                            <div class="col-3 d-flex align-items-center">
-                                                Satuan
-                                            </div>
-                                            <div class="col d-flex align-items-center">
-                                                <select name="Satuan" id="" style="height: 40px; width: 100%;">
-                                                    <option value="pcs">pcs</option>
-                                                    <option value="pack">pack</option>
-                                                </select>
-                                            </div>
+                                        <div class="mb-3">
+                                            <label for="dosis">Dosis</label>
+                                            <input type="text" name="" id="dosis" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label for="dosis">Satuan</label>
+                                            <select name="" id="dosis" class="form-select">
+                                                <option value="PCS">PCS</option>
+                                                <option value="Pack">Pack</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg">
-                                <div class="row" style="height: 50px;">
-                                    <div class="col-3 d-flex align-items-center">
-                                        Tarif
-                                    </div>
-                                    <div class="col d-flex align-items-center">
-                                        <input type="text" name="Tarif" id="" style="width: 100%; height: 40px;" placeholder="masukan Tarif">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label for="Tarif">Tarif</label>
+                                            <input type="text" name="" id="Tarif" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row" style="height: 50px;">
-                                    <div class="col-3 d-flex align-items-center">
-                                        Jumlah
-                                    </div>
-                                    <div class="col d-flex align-items-center">
-                                        <input type="text" name="Jumlah" id="" style="width: 100%; height: 40px;" placeholder="masukan Jumlah">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">      
+                                            <label for="Jumlah">Jumlah</label>
+                                            <input type="text" name="" id="Jumlah" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                Catatan
+                                <div class="mb-3">
+                                    Catatan
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <textarea name="" id="" cols="30" rows="5" style="width: 100%;"></textarea>
+                                <div class="mb-3">
+                                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
